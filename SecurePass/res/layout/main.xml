@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/farback"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/passwordfield"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Password..."
+        android:inputType="textPassword" />
+    
+    <!--<LinearLayout
+        android:id="@+id/passwordinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        
+        <LinearLayout
+        android:id="@+id/passwordinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/charactersimage"
+                android:layout_width="64"
+                android:layout_height="64" />
+            
+        	<TextView
+            	android:id="@+id/characters"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:textSize="22sp"
+            	android:text="Your password uses characters from the <b>lowercase</b> and <b>numerical</b> sets, a total of <b>36</b> possible character combinations."/>
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/combinations"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Your password is <b>11</b> of a recommended 16 characters long, and is 1 of a possible <b>131 quadrillion</b> combinations."/>
+        
+         <TextView
+            android:id="@+id/computerspecs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="A <b>Pentium II</b> processor runs at <b>0.120 MHz</b> as aopposed to the Titan supercomputers 15.8 million."/>
+        
+    </LinearLayout>-->
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout
+        android:id="@+id/firstback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ambiguityview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/farback"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="Number of Possible Characters: 0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/characterview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ambiguityview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="Length of Password: 0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/combinationsview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/characterview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:text="Combinations: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/combinationsview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:text="Time to crack: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/crackview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/combinationsview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:text="Time to crack: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/combinationsview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:text="Time to crack: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    	</RelativeLayout>		
+
+        </ScrollView>
+
+    	<RelativeLayout
+    	    android:layout_width="match_parent"
+        	android:layout_height="fill_parent" >
+    	    
+    	    <com.google.ads.AdView
+      		  	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+      		  	android:id="@+id/adview"
+     			android:layout_width="wrap_content"
+       	 		android:layout_height="wrap_content"
+       		 	app:adSize="BANNER"
+        		app:adUnitId="a15151540339750" 
+        		android:layout_alignParentBottom="true"
+        		android:layout_centerHorizontal="true">
+
+    		</com.google.ads.AdView>
+    
+    	</RelativeLayout>
+
+</LinearLayout>

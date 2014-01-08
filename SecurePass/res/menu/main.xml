@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/changedevice"
+        android:title="Change cracking device"
+        android:titleCondensed="Device"/>
+
+    <item 
+        android:id="@+id/shownumbers"
+        android:title="Display as words"
+        android:titleCondensed="Display words"
+        android:checkable="true"/>
+</menu>

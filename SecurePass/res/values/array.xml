@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="devices_array">
+        <item >Default (4 x 2.0GHz)</item>
+        <item >Google Nexus 7 (4 x 1.3GHz)</item>
+        <item >Titan Supercomputer</item>
+        <item >Core i7 3770K (8 x 3.9GHz)</item>
+        <item >Pentium I (1 x 120MHz)</item>
+    </string-array>
+    
+</resources>
